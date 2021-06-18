@@ -30,7 +30,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 
 # Get non-open-source specific aspects
-$(call inherit-product, vendor/oneplus/sm8350-common/sm8350-common-vendor.mk)
+#$(call inherit-product, vendor/oneplus/sm8350-common/sm8350-common-vendor.mk)
 
 # Additional native libraries
 PRODUCT_COPY_FILES += \
@@ -235,7 +235,6 @@ PRODUCT_PACKAGES += \
     init.qti.kernel.sh \
     init.qti.qcv.rc \
     init.qti.qcv.sh \
-    init.recovery.qcom.rc \
     init.target.rc \
     init.uicc.rc \
     ueventd.qcom.rc \
@@ -419,7 +418,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     oneplus-fwk
 
-PRODUCT_BOOT_JARS += \
+#PRODUCT_BOOT_JARS += \
     oneplus-fwk
 
 # Power
@@ -477,7 +476,7 @@ PRODUCT_PACKAGES += \
     qti_telephony_utils.xml \
     telephony-ext
 
-PRODUCT_BOOT_JARS += \
+#PRODUCT_BOOT_JARS += \
     telephony-ext
 
 PRODUCT_COPY_FILES += \
@@ -553,7 +552,7 @@ PRODUCT_PACKAGES += \
     libnl \
     libwfdaac_vendor
 
-PRODUCT_BOOT_JARS += \
+#PRODUCT_BOOT_JARS += \
     WfdCommon
 
 PRODUCT_BUILD_SUPER_PARTITION := false
