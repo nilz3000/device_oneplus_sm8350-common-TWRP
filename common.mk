@@ -119,6 +119,7 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-service_64 \
     vendor.qti.hardware.camera.postproc@1.0.vendor
 
+<<<<<<< HEAD
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.camera.flash-autofocus.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.flash-autofocus.xml \
     frameworks/native/data/etc/android.hardware.camera.front.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.front.xml \
@@ -127,6 +128,41 @@ PRODUCT_COPY_FILES += \
 
 # Dalvik
 $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
+=======
+# Common init scripts
+PRODUCT_PACKAGES += \
+    charger_fw_fstab.qti \
+    fstab.qcom \
+    ftm_power_config.sh \
+    init.class_main.sh \
+    init.cust.rc \
+    init.kernel.post_boot.sh \
+    init.oem.debug.rc \
+    init.oem.rc \
+    init.oem_ftm.rc \
+    init.oem_rf.rc \
+    init.oplus_chg.sh \
+    init.qcom.class_core.sh \
+    init.qcom.early_boot.sh \
+    init.qcom.factory.rc \
+    init.qcom.post_boot.sh \
+    init.qcom.rc \
+    init.qcom.sh \
+    init.qcom.usb.rc \
+    init.qcom.usb.sh \
+    init.qti.chg_policy.sh \
+    init.qti.dcvs.sh \
+    init.qti.kernel.rc \
+    init.qti.kernel.sh \
+    init.qti.qcv.rc \
+    init.qti.qcv.sh \
+    init.target.rc \
+    init.uicc.rc \
+    ueventd.qcom.rc \
+    vendor.oem_ftm.rc \
+    vendor.oem_ftm_svc_disable.rc \
+    vendor_modprobe.sh
+>>>>>>> 8ad5e4c... TWRP
 
 # Display
 PRODUCT_PACKAGES += \
@@ -320,8 +356,13 @@ PRODUCT_PACKAGES += \
     OPlusWifiResCommon \
     WifiResTarget
 
+<<<<<<< HEAD
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
+=======
+#PRODUCT_BOOT_JARS += \
+    oneplus-fwk
+>>>>>>> 8ad5e4c... TWRP
 
 # Power
 PRODUCT_PACKAGES += \
@@ -402,7 +443,7 @@ PRODUCT_PACKAGES += \
     qti_telephony_utils_prd.xml \
     telephony-ext
 
-PRODUCT_BOOT_JARS += \
+#PRODUCT_BOOT_JARS += \
     telephony-ext
 
 PRODUCT_COPY_FILES += \
@@ -477,7 +518,7 @@ PRODUCT_PACKAGES += \
     libnl \
     libwfdaac_vendor
 
-PRODUCT_BOOT_JARS += \
+#PRODUCT_BOOT_JARS += \
     WfdCommon
 
 # Inherit from the proprietary files makefile.
