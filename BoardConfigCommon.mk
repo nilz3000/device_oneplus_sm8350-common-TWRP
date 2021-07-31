@@ -184,9 +184,6 @@ TARGET_USERIMAGES_USE_F2FS := true
 CUSTOM_APNS_FILE := $(COMMON_PATH)/configs/apns-conf.xml
 ENABLE_VENDOR_RIL_SERVICE := true
 
-# Security patch level
-VENDOR_SECURITY_PATCH := 2021-05-01
-
 # Sepolicy
 #include device/qcom/sepolicy_vndr/SEPolicy.mk
 
