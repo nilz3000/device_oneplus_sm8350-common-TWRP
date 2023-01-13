@@ -1,7 +1,2 @@
 [
-  {
-    "remote": "github",
-    "repository": "nebrassy/android_kernel_oneplus_sm8350",
-    "target_path": "kernel/oneplus/sm8350",
-  }
 ]
