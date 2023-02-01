@@ -4,7 +4,7 @@
 #
 
 BUILD_BROKEN_DUP_RULES := true
-#BUILD_BROKEN_USES_BUILD_COPY_HEADERS := true
+BUILD_BROKEN_USES_BUILD_COPY_HEADERS := true
 BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
 
 COMMON_PATH := device/oneplus/sm8350-common
@@ -81,23 +81,14 @@ BOARD_KERNEL_CMDLINE := \
 
     #androidboot.bootdevice=1d84000.ufshc \
 
+TARGET_NO_KERNEL := false
+TARGET_KERNEL_ARCH := $(TARGET_ARCH)
 BOARD_KERNEL_IMAGE_NAME := Image
 TARGET_PREBUILT_KERNEL := $(COMMON_PATH)/prebuilt/$(BOARD_KERNEL_IMAGE_NAME)
 BOARD_KERNEL_PAGESIZE := 4096
 #BOARD_KERNEL_SEPARATED_DTBO := true
 BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION)
 BOARD_RAMDISK_USE_LZ4 := true
-#BOARD_RAMDISK_USE_LZMA := true
-#TARGET_KERNEL_SOURCE := kernel/oneplus/sm8350
-#TARGET_KERNEL_CONFIG := vendor/lahaina-qgki_defconfig
-#TARGET_KERNEL_NO_GCC := true
-
-# Kernel modules
-#BOARD_VENDOR_KERNEL_MODULES_BLOCKLIST_FILE := $(COMMON_PATH)/modules.blocklist
-#BOARD_VENDOR_KERNEL_MODULES_LOAD := $(strip $(shell cat $(COMMON_PATH)/modules.load))
-#BOARD_VENDOR_RAMDISK_RECOVERY_KERNEL_MODULES_LOAD := $(strip $(shell cat $(COMMON_PATH)/modules.load.recovery))
-#BOOT_KERNEL_MODULES := $(strip $(shell cat $(COMMON_PATH)/modules.load.recovery))
-#TARGET_MODULE_ALIASES += wlan.ko:qca_cld3_wlan.ko
 
 # Platform
 BOARD_USES_QCOM_HARDWARE := true
