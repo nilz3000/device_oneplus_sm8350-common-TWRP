@@ -76,19 +76,17 @@ BOARD_KERNEL_CMDLINE := \
     service_locator.enable=1 \
     swiotlb=0 \
     ip6table_raw.raw_before_defrag=1 \
-    iptable_raw.raw_before_defrag=1 \
-    androidboot.selinux=permissive \
+    iptable_raw.raw_before_defrag=1
 
-    #androidboot.bootdevice=1d84000.ufshc \
-
-TARGET_NO_KERNEL := false
 TARGET_KERNEL_ARCH := $(TARGET_ARCH)
 BOARD_KERNEL_IMAGE_NAME := Image
-TARGET_PREBUILT_KERNEL := $(COMMON_PATH)/prebuilt-$(FIRMWARE_VERSION)/$(BOARD_KERNEL_IMAGE_NAME)
+TARGET_PREBUILT_KERNEL := $(COMMON_PATH)/prebuilt/$(BOARD_KERNEL_IMAGE_NAME)
 BOARD_KERNEL_PAGESIZE := 4096
 #BOARD_KERNEL_SEPARATED_DTBO := true
 BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION)
 BOARD_RAMDISK_USE_LZ4 := true
+#TARGET_KERNEL_SOURCE := kernel/oneplus/sm8350
+#TARGET_KERNEL_CONFIG := vendor/lahaina-qgki_defconfig
 
 # Platform
 BOARD_USES_QCOM_HARDWARE := true
