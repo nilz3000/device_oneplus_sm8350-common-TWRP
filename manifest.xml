@@ -29,7 +29,7 @@
     <hal format="hidl">
         <name>android.hardware.bluetooth.audio</name>
         <transport>hwbinder</transport>
-        <version>2.0</version>
+        <version>2.1</version>
         <interface>
             <name>IBluetoothAudioProvidersFactory</name>
             <instance>default</instance>
@@ -66,16 +66,6 @@
         <interface>
             <name>IKeymasterDevice</name>
             <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl">
-        <name>android.hardware.media.c2</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IComponentStore</name>
-            <instance>default</instance>
-            <instance>software</instance>
         </interface>
     </hal>
     <hal format="hidl">
@@ -192,28 +182,10 @@
     <hal format="hidl">
         <name>com.qualcomm.qti.uceservice</name>
         <transport>hwbinder</transport>
-        <version>2.2</version>
+        <version>2.3</version>
         <interface>
             <name>IUceService</name>
             <instance>com.qualcomm.qti.uceservice</instance>
-        </interface>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.dolby.hardware.dms</name>
-        <transport>hwbinder</transport>
-        <version>2.0</version>
-        <interface>
-            <name>IDms</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.goodix.hardware.biometrics.fingerprint</name>
-        <transport>hwbinder</transport>
-        <version>2.1</version>
-        <interface>
-            <name>IGoodixFingerprintDaemon</name>
-            <instance>default</instance>
         </interface>
     </hal>
     <hal format="hidl">
@@ -226,147 +198,33 @@
         </interface>
     </hal>
     <hal format="hidl">
-        <name>vendor.oneplus.engnative.engineer</name>
+        <name>vendor.oplus.hardware.appradio</name>
         <transport>hwbinder</transport>
         <version>1.0</version>
         <interface>
-            <name>IEngineer</name>
-            <instance>default</instance>
+            <name>IOplusAppRadio</name>
+            <instance>oplus_app_slot1</instance>
+            <instance>oplus_app_slot2</instance>
         </interface>
     </hal>
     <hal format="hidl">
-        <name>vendor.oneplus.faceunlock.hal</name>
+        <name>vendor.oplus.hardware.ims</name>
         <transport>hwbinder</transport>
         <version>1.0</version>
         <interface>
-            <name>IFaceUnlockNativeService</name>
-            <instance>default</instance>
+            <name>IOplusImsRadio</name>
+            <instance>oplusimsradio0</instance>
+            <instance>oplusimsradio1</instance>
         </interface>
     </hal>
     <hal format="hidl">
-        <name>vendor.oneplus.fingerprint.extension</name>
+        <name>vendor.oplus.hardware.radio</name>
         <transport>hwbinder</transport>
         <version>1.0</version>
         <interface>
-            <name>IVendorFingerprintExtensions</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.oneplus.hardware.CameraMDMHIDL</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IOnePlusCameraMDM</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.oneplus.hardware.camera</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IOnePlusCameraProvider</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.oneplus.hardware.charger</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>ICharger</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.oneplus.hardware.cwb</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>ICwbService</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.oneplus.hardware.display</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IOneplusDisplay</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.oneplus.hardware.drmkey</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IOneplusDrmKey</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.oneplus.hardware.hypnus</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IHypnusUtil</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.oneplus.hardware.ifaa</name>
-        <transport>hwbinder</transport>
-        <version>2.0</version>
-        <interface>
-            <name>IOneplusIfaa</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.oneplus.hardware.lmvibrator</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>ILinearMotorVibrator</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.oneplus.hardware.param</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IOneplusParam</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.oneplus.hardware.rpmb</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IOneplusRpmb</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.oneplus.hardware.wifi</name>
-        <transport>hwbinder</transport>
-        <version>1.1</version>
-        <interface>
-            <name>IOneplusWifi</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.qti.data.factory</name>
-        <transport>hwbinder</transport>
-        <version>2.1</version>
-        <interface>
-            <name>IFactory</name>
-            <instance>default</instance>
+            <name>IOplusRadio</name>
+            <instance>oplus_slot1</instance>
+            <instance>oplus_slot2</instance>
         </interface>
     </hal>
     <hal format="hidl">
@@ -375,6 +233,15 @@
         <version>1.1</version>
         <interface>
             <name>IEsePowerManager</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.qti.data.factory</name>
+        <transport>hwbinder</transport>
+        <version>2.3</version>
+        <interface>
+            <name>IFactory</name>
             <instance>default</instance>
         </interface>
     </hal>
@@ -390,7 +257,7 @@
     <hal format="hidl">
         <name>vendor.qti.hardware.bluetooth_audio</name>
         <transport>hwbinder</transport>
-        <version>2.0</version>
+        <version>2.1</version>
         <interface>
             <name>IBluetoothAudioProvidersFactory</name>
             <instance>default</instance>
@@ -430,6 +297,15 @@
         <interface>
             <name>IPostProcService</name>
             <instance>camerapostprocservice</instance>
+        </interface>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.qti.hardware.camera.cameraextension</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>ICameraExtensionService</name>
+            <instance>cameraextensionservice</instance>
         </interface>
     </hal>
     <hal format="hidl">
@@ -480,39 +356,12 @@
         </interface>
     </hal>
     <hal format="hidl">
-        <name>vendor.qti.hardware.eid</name>
+        <name>vendor.qti.hardware.mwqemadapter</name>
         <transport>hwbinder</transport>
         <version>1.0</version>
         <interface>
-            <name>IEid</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.qti.hardware.embmssl</name>
-        <transport>hwbinder</transport>
-        <version>1.1</version>
-        <interface>
-            <name>IEmbms</name>
-            <instance>embmsslServer0</instance>
-        </interface>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.qti.hardware.factory</name>
-        <transport>hwbinder</transport>
-        <version>1.1</version>
-        <interface>
-            <name>IFactory</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.qti.hardware.iop</name>
-        <transport>hwbinder</transport>
-        <version>2.0</version>
-        <interface>
-            <name>IIop</name>
-            <instance>default</instance>
+            <name>IMwqemAdapter</name>
+            <instance>MwqemAdapter</instance>
         </interface>
     </hal>
     <hal format="hidl">
@@ -522,15 +371,6 @@
         <interface>
             <name>IPerf</name>
             <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.qti.hardware.qccvndhal</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IQccvndhal</name>
-            <instance>qccvndhal</instance>
         </interface>
     </hal>
     <hal format="hidl">
@@ -577,7 +417,7 @@
     <hal format="hidl">
         <name>vendor.qti.hardware.radio.ims</name>
         <transport>hwbinder</transport>
-        <version>1.6</version>
+        <version>1.7</version>
         <interface>
             <name>IImsRadio</name>
             <instance>imsradio0</instance>
@@ -626,7 +466,7 @@
     <hal format="hidl">
         <name>vendor.qti.hardware.radio.qtiradio</name>
         <transport>hwbinder</transport>
-        <version>2.5</version>
+        <version>2.6</version>
         <interface>
             <name>IQtiRadio</name>
             <instance>slot1</instance>
@@ -664,15 +504,6 @@
         </interface>
     </hal>
     <hal format="hidl">
-        <name>vendor.qti.hardware.secureprocessor.device</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>ISecureProcessor</name>
-            <instance>qti-tee</instance>
-        </interface>
-    </hal>
-    <hal format="hidl">
         <name>vendor.qti.hardware.sensorscalibrate</name>
         <transport>hwbinder</transport>
         <version>1.0</version>
@@ -706,15 +537,6 @@
         <interface>
             <name>IHidlVppService</name>
             <instance>vppService</instance>
-        </interface>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.qti.hardware.wifi.wifilearner</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IWifiStats</name>
-            <instance>wifiStats</instance>
         </interface>
     </hal>
     <hal format="hidl">
